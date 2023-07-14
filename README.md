@@ -1,4 +1,11 @@
-![Config preview gif image](https://drive.google.com/uc?export=download&id=1ON08YBTFNIUIyREI90yLNOFmrO8WofnT)
+## Screenshots
+
+<div style="display: flex; align-content: center;">
+  <img src="https://drive.google.com/uc?export=view&id=16qAaJD2fM-kxnp40lKSLlhjoSnABdT-v" alt="Config preview. Terminal" width="450" border="10" />
+  <img src="http://drive.google.com/uc?export=view&id=1JEvsD9bn6OrTh7mJfuZBrFNgIVZb8BjO" alt="Config preview. Debugger" width="450" border="10" />
+  <img src="http://drive.google.com/uc?export=view&id=1beSxHLCaKnCdbc-sx-YXS-ZNt8sYBrC1" alt="Config preview. Keybindings menu" width="450" border="10" />
+  <img src="http://drive.google.com/uc?export=view&id=1WoQe1j0qUMCMfd2psa-c5nzfq7hQUQjY" alt="Config preview. Git diff" width="450" border="10" />
+</div>
 
 ## Try out this config
 
