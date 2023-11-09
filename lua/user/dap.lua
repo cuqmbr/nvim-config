@@ -7,7 +7,7 @@ end
 
 dap.adapters.coreclr = {
   type = 'executable',
-  command = '/home/cuqmbr/.local/bin/netcoredbg/netcoredbg',
+  command = 'netcoredbg',
   args = {'--interpreter=vscode'}
 }
 
@@ -16,10 +16,37 @@ dap.configurations.cs = {
     type = "coreclr",
     name = "launch - netcoredbg",
     request = "launch",
+    env = {
+      ASPNETCORE_ENVIRONMENT = "Development",
+      DOTNET_ENVIRONMENT = "Development"
+    },
     program = function()
-        return vim.fn.input('Path to dll', vim.fn.getcwd(), 'file')
+        return vim.fn.input('Path to dll ', vim.fn.getcwd(), 'file')
     end,
+    cwd = "${workspaceFolder}/ShoppingAssistantApi.Api",
   },
+}
+
+-- Flutter on Dart
+
+dap.adapters.dart = {
+  type = "executable",
+  command = "flutter",
+  -- This command was introduced upstream in https://github.com/dart-lang/sdk/commit/b68ccc9a
+  args = {"debug_adapter"}
+}
+
+dap.configurations.dart = {
+  {
+    type = "dart",
+    request = "launch",
+    name = "Launch Flutter Program",
+    -- The nvim-dap plugin populates this variable with the filename of the current buffer
+    program = "${file}",
+    -- The nvim-dap plugin populates this variable with the editor's current working directory
+    cwd = "${workspaceFolder}",
+    -- toolArgs = {"-d", "linux"}, -- Note for Dart apps this is args, for Flutter apps toolArgs
+  }
 }
 
 -- DapUI

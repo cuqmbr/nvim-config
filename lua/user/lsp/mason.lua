@@ -1,6 +1,10 @@
 local servers = {
 	"lua_ls",
 	"omnisharp",
+  "bashls",
+  "jdtls",
+  "clangd",
+  "dartls",
 }
 
 local settings = {

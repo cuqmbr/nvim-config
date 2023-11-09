@@ -42,7 +42,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim"
-  use "kyazdani42/nvim-tree.lua"
+  use "nvim-tree/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
   use { "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons" } }
@@ -63,9 +63,12 @@ return packer.startup(function(use)
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
-	use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  -- use "hrsh7th/cmp-cmdline"
 	use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lsp-signature-help"
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
 	use "hrsh7th/cmp-nvim-lua"
+
 
 	-- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -89,6 +92,10 @@ return packer.startup(function(use)
 
 	-- Git
 	use "lewis6991/gitsigns.nvim"
+
+  -- Flutter
+  -- use "neoclide/coc.nvim"
+  -- use "iamcco/coc-flutter"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

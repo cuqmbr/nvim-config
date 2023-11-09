@@ -4,8 +4,9 @@ if not status_ok then
 end
 
 configs.setup {
-  -- ensure_installed = { "maintained" }, -- put the language you want in this array
-  -- ensure_installed = "c_sharp", -- one of "all" or a list of languages
+  modules = { "" },
+  auto_install = false,
+  ensure_installed = { "" }, -- put the language you want in this array
   ignore_install = { "" }, -- List of parsers to ignore installing
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   highlight = {
