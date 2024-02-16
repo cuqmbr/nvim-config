@@ -6,7 +6,11 @@ Clone the repository into the correct location (make a backup your current `nvim
 The following command makes it all automatically:
 
 ```
-cp -r ~/.config/nvim ~/.config/nvim_old && rm -rf ~/.cache/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.config/nvim && git clone git@gitea.cuqmbr.xyz:cuqmbr/nvim-config.git ~/.config/nvim && echo 'cuqmbr's NeoVIM config installation completed successfuly' || echo 'Failed to install cuqmbr's NeoVIM config'
+cp -r ~/.config/nvim ~/.config/nvim_old && \
+rm -rf ~/.cache/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.config/nvim && \
+git clone git@gitea.cuqmbr.xyz:cuqmbr/nvim-config.git ~/.config/nvim && \
+echo "cuqmbr's NeoVIM config installation completed successfuly" || \
+echo "Failed to install cuqmbr's NeoVIM config"
 ```
 
 Run `nvim` in your terminal and wait for the plugins to be installed. It should take less than a minute. Reopen nvim
