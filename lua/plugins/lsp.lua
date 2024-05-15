@@ -5,9 +5,29 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- LSP setup for different programming languages
 local lspconfig = require('lspconfig')
-local lsputil = require('lspconfig/util')
 
 lspconfig.omnisharp.setup {}
+
+lspconfig.jdtls.setup {
+  root_dir = vim.loop.cwd
+}
+
+lspconfig.pyright.setup {}
+
+lspconfig.bashls.setup {}
+
+lspconfig.html.setup {}
+
+lspconfig.emmet_ls.setup {}
+
+lspconfig.tsserver.setup {}
+
+lspconfig.cssls.setup {}
+
+lspconfig.jsonls.setup {}
+
+lspconfig.prosemd_lsp.setup {}
+
 
 -- lua_ls LSP setup via Neodev extension which provides additional functionality
 require("neodev").setup()

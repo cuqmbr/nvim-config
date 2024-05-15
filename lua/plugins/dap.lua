@@ -1,6 +1,6 @@
 local dap = require("dap")
 
--- dotnet
+-- .NET
 
 dap.adapters.coreclr = {
   type = "executable",
@@ -18,6 +18,10 @@ dap.configurations.cs = {
     end,
   },
 }
+
+-- Java
+
+
 
 -- DapUI
 

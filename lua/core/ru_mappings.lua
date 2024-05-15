@@ -12,6 +12,18 @@
 -- Учтите, что клавишы, назначенные системой, будут главнее => сработает системная комбинация вместо установленной здесь
 -- Русские сочетания клавиш добавляются здесь (для сохранения удобной структуры), хотя никто не запрещает создавать их в lua/core/mappings.lua
 
+-- Press jk fast to exit insert mode
+vim.keymap.set("i", "ол", "<ESC>")
+vim.keymap.set("i", "ло", "<ESC>")
+
+vim.keymap.set("v", "у", "e")
+vim.keymap.set("v", "ц", "w")
+vim.keymap.set("v", "и", "b")
+
+vim.keymap.set("n", "у", "e")
+vim.keymap.set("n", "ц", "w")
+vim.keymap.set("n", "и", "b")
+
 vim.keymap.set("n", "<C-ц>", ":w<CR>") -- Сохранить файл
 vim.keymap.set("n", "<C-й>", ":q<CR>") -- Закрыть Neovim
 
@@ -28,6 +40,8 @@ vim.keymap.set("n", "щ", "o")
 vim.keymap.set("n", "Щ", "O")
 vim.keymap.set("n", "ш", "i")
 vim.keymap.set("n", "Ш", "I")
+vim.keymap.set("n", "з", "p")
+vim.keymap.set("n", "З", "P")
 vim.keymap.set("v", "с", "c")
 
 -- Перемещение влево
@@ -51,6 +65,7 @@ vim.keymap.set("n", "в", "d")
 vim.keymap.set("v", "в", "d")
 vim.keymap.set("n", "вв", "dd")
 vim.keymap.set("n", "ч", "x")
+vim.keymap.set("v", "ч", "x")
 
 -- Вставка
 vim.keymap.set("n", "з", "p")
@@ -68,6 +83,9 @@ vim.keymap.set("v", "н", "yy")
 
 -- Замена replace
 vim.keymap.set("n", "к", "r")
+
+-- Заменить change
+vim.keymap.set("n", "с", "c")
 
 -- Работа с вкладками (буферами)
 vim.keymap.set("n", "<leader>ч", ":BufferLineSortByTabs<CR>:BufferLineCloseRight<CR>") -- Закрытие всех буферов
@@ -99,6 +117,10 @@ vim.keymap.set("n", "пп", "gg")
 vim.keymap.set("v", "пп", "gg")
 vim.keymap.set("n", "П", "G")
 vim.keymap.set("v", "П", "G")
+vim.keymap.set("n", "<C-в>", "<C-d>")
+vim.keymap.set("v", "<C-в>", "<C-d>")
+vim.keymap.set("n", "<C-г>", "<C-u>")
+vim.keymap.set("v", "<C-г>", "<C-u>")
 
 --[[ Если строка визуально разбита на несколько строк, то курсор перепрыгнет через них, так как считает, что это одна строка
 При помощи настройки ниже курсор будет перемещаться по ним будто это разные строки --]]
