@@ -26,7 +26,7 @@ require("lazy").setup {
   -- Fuzzy find everything and everywhere
   {
     "nvim-telescope/telescope.nvim",
-    tag = "0.1.5",
+    tag = "0.1.8",
     dependencies = { "nvim-lua/plenary.nvim", "BurntSushi/ripgrep" }
   },
 
@@ -50,6 +50,8 @@ require("lazy").setup {
   -- Integration wiht dap
   { "mfussenegger/nvim-dap" },
   { "rcarriga/nvim-dap-ui" },
+  -- dap dependency
+  { "nvim-neotest/nvim-nio" },
 
   -- Completion
   { "hrsh7th/cmp-nvim-lsp" },
@@ -81,7 +83,7 @@ require("lazy").setup {
   -- Line at the top of the screen with all opened buffers
   {
     "akinsho/bufferline.nvim",
-    tag = "v4.5.0",
+    tag = "v4.6.0",
     dependencies = "nvim-tree/nvim-web-devicons"
   },
 

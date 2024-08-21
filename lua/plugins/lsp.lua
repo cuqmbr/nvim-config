@@ -26,7 +26,7 @@ lspconfig.cssls.setup {}
 
 lspconfig.jsonls.setup {}
 
-lspconfig.prosemd_lsp.setup {}
+lspconfig.marksman.setup {}
 
 
 -- lua_ls LSP setup via Neodev extension which provides additional functionality
