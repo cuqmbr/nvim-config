@@ -28,6 +28,14 @@ lspconfig.jsonls.setup {}
 
 lspconfig.marksman.setup {}
 
+lspconfig.yamlls.setup {}
+
+lspconfig.terraformls.setup {}
+
+lspconfig.docker_compose_language_service.setup {}
+
+lspconfig.dockerls.setup {}
+
 
 -- lua_ls LSP setup via Neodev extension which provides additional functionality
 require("neodev").setup()
