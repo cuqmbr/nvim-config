@@ -1,2 +1,3 @@
 vim.opt.termguicolors = true -- Enable 24-bit RGB color in the TUI
-require("kanagawa").load("wave") -- Activate theme previously installed in lua/core/plugins
+vim.o.background = 'dark' -- Select dark or light theme
+require('vscode').load() -- Activate theme previously installed in lua/core/plugins
